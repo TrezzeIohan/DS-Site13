@@ -1063,3 +1063,7 @@ ALTERAÇÕES
 #arraste{
   border: 1px solid var(--white-color);
 }
+
+#hero-panel{
+  min-height: 0vh;
+}
