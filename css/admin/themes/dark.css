@@ -1,0 +1,29 @@
+:root {
+	--white: #343a40;
+    --gray: #ebedf2;
+    --primary: #34bfa3;
+    --secondary: #6c757d;
+    --success: #34bfa3;
+    --info: #36a3f7;
+    --warning: #ffb822;
+    --danger: #f4516c;
+    --light: #6c757d;
+    --dark: #f8f9fa;
+	--black: #fff;
+}
+
+.btn:hover,
+.btn.btn-outline-info:hover:not(:disabled),
+.btn.btn-outline-success:hover:not(:disabled),
+.btn.btn-outline-danger:hover:not(:disabled),
+.btn.btn-outline-warning:hover:not(:disabled),
+.m-menu__item--active > .m-menu__link-icon,
+.m-menu__item--active > .m-menu__link-text,
+.m-menu__item:hover .m-menu__link-icon,
+.m-menu__item:hover .m-menu__link-text {
+    color: var(--dark)!important;
+}
+
+.m-aside-left.m-aside-left--skin-dark {
+	background-color: #515c66
+}
