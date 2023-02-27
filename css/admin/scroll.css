@@ -1,0 +1,28 @@
+#m_header_nav {background-color: var(--white)}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 0px;
+    border: 2px solid transparent;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: var(--gray);
+}
+
+::-webkit-scrollbar-track{
+    border: 10px solid var(--light);
+    border-radius: 0px;
+}
+
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-text,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-text {
+	color: #00b7ff!important;
+}
+
+m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--active > .m-menu__heading .m-menu__link-bullet.m-menu__link-bullet--dot > span,
+.m-aside-menu.m-aside-menu--skin-dark .m-menu__nav > .m-menu__item .m-menu__submenu .m-menu__item.m-menu__item--active > .m-menu__link .m-menu__link-bullet.m-menu__link-bullet--dot > span {
+	background-color: #00b7ff!important;
+}

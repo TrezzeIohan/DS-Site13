@@ -1,0 +1,363 @@
+:root {
+    --danger: #B22222!important;
+}
+
+.input-group .form-control[type="color"]{
+    padding: 0!important;
+    cursor: pointer;
+}
+
+.form-control.ui {
+    position: relative!important;
+    -webkit-box-flex: 1!important;
+    -ms-flex: 1 1 auto!important;
+    flex: 1 1 auto!important;
+    width: 1%!important;
+    margin-bottom: 0!important;
+
+}
+
+.ui.selection.dropdown.form-control {
+     min-width: auto!important;
+}
+
+.form-control.m_selectpicker.ui.search.dropdown.disabled-selectpicker.selection.multiple {
+    display: flex!important;
+    align-items: center!important;
+    align-content: center!important;
+    flex-wrap: wrap!important;
+    height: auto!important;
+    min-height: 40.13101995px!important;
+}
+
+.input-group > .form-control.m_selectpicker.ui.dropdown.disabled-selectpicker:not(:first-child), .input-group > .form-control.m_selectpicker.ui.dropdown.disabled-selectpicker:not(:first-child) {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+}
+
+.form-control.m_selectpicker.ui.multiple.search.dropdown.disabled-selectpicker>.text {
+    top: auto!important;
+    user-select: none!important;
+}
+
+.content-legend {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+[data-tooltip]:after,
+.ui.danger.popup,
+.ui.danger.top.popup:before,
+.ui.info.popup,
+.ui.info.top.popup:before,
+.ui.success.popup,
+.ui.success.top.popup:before,
+.ui.warning.popup,
+.ui.warning.top.popup:before {
+    z-index: 10000!important;
+    box-shadow: none!important;
+}
+
+.ui.danger.popup, .ui.danger.top.popup:before {
+    background: var(--danger);
+    color: var(--light);
+    border-color: var(--danger);
+}
+
+.ui.info.popup, .ui.info.top.popup:before {
+    background: var(--info);
+    color: var(--light);
+    border-color: var(--info);
+}
+
+.ui.success.popup, .ui.success.top.popup:before {
+    background: var(--green);
+    color: var(--light);
+    border-color: var(--green);
+}
+
+.ui.warning.popup, .ui.warning.top.popup:before {
+    background: var(--warning);
+    color: var(--dark);
+    border-color: var(--warning);
+}
+
+.input-group .dropdown.bootstrap-select {
+    width: auto!important;
+}
+
+table.dataTable thead>tr>th.sorting:last-child:before,
+table.dataTable thead>tr>th.sorting:last-child:after {
+    display: none;
+}
+
+.top-0 {
+    top: 0!important;
+}
+
+.left-0 {
+    left: 0!important;
+}
+
+.right-0 {
+    right: 0!important;
+}
+
+.bottom-0 {
+    bottom: 0!important;
+}
+
+.fix-label-group {
+  align-items: center;
+}
+
+.fix-label-item {
+  height: calc(2.25rem + 2px);
+}
+
+.content-legend div.title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transform: translateY(100%);
+    opacity: 0;
+    filter: blur(8px);
+    transition: all 450ms ease;
+}
+
+.content-legend:hover div.title,
+.content-legend:focus-within div.title {
+    transform: translateY(0%);
+    opacity: 1;
+    filter: blur(0px);
+}
+
+.bloco-opcional {
+    transition: all 250ms ease;
+    max-height: 0;
+    overflow-y: hidden;
+    filter: opacity(0) blur(48px);
+}
+.bloco-opcional.ativo {
+    max-height: 500vh;
+    filter: opacity(1) blur(0px);
+}
+
+label {
+    width: 100%;
+    padding: 16px;
+    display: block;
+}
+label > b {
+    padding-bottom: 12px;
+    transition: color 600ms ease;
+    color: var(--gray);
+    display: block;
+    font-size: 14px;
+}
+label:focus-within > b, label:hover > b {
+    color: var(--black);
+}
+
+label b + .bootstrap-switch {
+    margin-top: 0.25rem!important;
+}
+
+.bootstrap-select li a > span, .bootstrap-select .filter-option-inner i {
+	display: inline-block;
+	margin-right: 12px!important;
+}
+
+.bootstrap-select .dropdown-item, .bootstrap-select .filter-option-inner {
+	display: flex!important;
+	flex-direction: row;
+  	align-items: flex-start;
+	align-content: space-between;
+}
+
+.bootstrap-select.text-center .filter-option-inner {
+    display: flex!important;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.bootstrap-select li a > [class*="icon"], .bootstrap-select .filter-option-inner i {
+	font-size: 18px!important;
+	width: 24px!important;
+	text-align: center!important;
+}
+
+.bootstrap-select li a.active:not(.selected) > span {
+	color: #fff!important;
+}
+
+.input-group>.bootstrap-select.dropdown:not(:first-child):last-child>.btn.dropdown-toggle{outline:0!important}
+
+.row.form-group, .row.m-portlet__body{
+	justify-content: space-between!important;
+	padding-top: 0!important;
+}
+
+.dropzone {
+	min-height: initial!important;
+}
+
+.bootstrap-switch.bootstrap-switch-focused {
+    border: 1px solid #ccc!important;
+    outline: 0!important;
+    box-shadow: 0px 0px 2px var(--gray)!important;
+}
+
+* {
+    outline: 0!important;
+}
+
+.note-editor.note-frame .note-status-output {
+    height: 11px!important;
+}
+
+.note-editable {
+    cursor: text!important;
+}
+
+.bootstrap-switch {
+    margin-top: 5px!important;
+    box-shadow: 0px 0px 2px var(--gray)!important;
+}
+
+.text-bold {
+    font-weight: bold!important;
+}
+
+.placeholder-normalized::-webkit-input-placeholder {
+    color: var(--dark)!important;
+}
+
+.m-topbar__userpic .la-user {
+    font-size: 2.4rem;
+    padding: 8px;
+    background: var(--dark);
+    color: var(--light);
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    border-radius: 100%;
+}
+
+.m-card-user__pic .la-user {
+    font-size: 2.4rem;
+    padding: 8px;
+    background: var(--light);
+    color: var(--dark);
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+    border-radius: 100%;
+}
+
+.btn+.btn.dropdown-toggle{font-family: 'Line Awesome Free'!important;position: relative!important;font-weight: 600!important;} .btn+.btn.dropdown-toggle:before {content: "\f0dd"!important;border: 0!important;
+    display: flex!important;justify-content: center; align-items: center;
+    width: 100%!important;
+    height: 100%!important;
+    color: #444!important;
+    position: absolute!important;
+    top: 0!important;
+    left: 0!important;right: 0!important; bottom: 0!important;
+    padding: 0!important;
+    margin: 0!important; opacity: 1!important;}
+
+label.has-error,
+label.has-error b,
+label.has-error .input-group .input-group-prepend>.input-group-text>i,
+label.has-error input[type="text"],
+label.has-error input[type="number"],
+label.has-error input[type="password"],
+label.has-error input[type="email"],
+label.has-error input[type="date"] {
+    color: #a00;
+}
+
+label input, label, label b, label .input-group-prepend .input-group-text, label .input-group .input-group-prepend>.input-group-text>i {
+    transition: all 300ms ease!important;
+}
+
+label.has-error input[type="text"],
+label.has-error input[type="number"],
+label.has-error input[type="password"],
+label.has-error input[type="email"],
+label.has-error input[type="date"] {
+    background-color: #fdd;
+}
+
+.bootstrap-select > .dropdown-toggle:after {
+	content: "\f0dd"!important;
+	font-family: 'Line Awesome Free'!important;
+	font-size: 14px;
+	margin-right: 0px;
+    font-weight: 600;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+}
+
+.bootstrap-select.show > .dropdown-toggle:after {
+	content: "\f0de"!important;
+}
+
+.bootstrap-select:hover > .dropdown-toggle:after {
+	content: "\f0dd"!important;
+	font-family: 'Line Awesome Free'!important;
+	font-size: 14px;
+	margin-right: 0px;
+    font-weight: 600;
+	position: absolute;
+	top: 1.5rem;
+	right: 1.5rem;
+}
+
+.bootstrap-select.show > .dropdown-toggle:after {
+	content: "\f0de"!important;
+}
+
+.bootstrap-select.show div.inner.show > ul > li.selected.active > a > span.bs-ok-default.check-mark:before {
+    content: '\f005'!important;
+    font-family: 'Line Awesome Free'!important;
+    font-weight: 400;
+}
+
+.bootstrap-select.show div.inner.show > ul > li.selected.active:hover > a > span.bs-ok-default.check-mark:before {
+    font-weight: 900;
+}
+
+.bootstrap-select .dropdown-toggle[data-toggle]:focus {
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-offset: 0!important;
+}
+
+.bootstrap-select .bootstrap-select + button.dropdown-toggle {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    background: transparent;
+    color: transparent;
+    opacity: 0;
+    filter: opacity(0);
+    transform: scale(0);
+    zoom: 0;
+}
