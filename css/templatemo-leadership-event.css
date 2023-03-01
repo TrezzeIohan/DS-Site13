@@ -19,6 +19,14 @@ https://templatemo.com/tm-575-leadership-event
   --navbar-bg-color:              #273053;
   --p-color:                      #717275;
   --highlight-icon-color:         #ff0100;
+  --lightBlue-color:              #CBD4D7;
+  --mustard-color:                #d9ba0a;
+  --complight-color:              #7B89C1;
+  --compmed-color:                #4B5B9F;
+  --main-bg-page:                 #273053;
+  --main-bg-page-1:               #303B66;
+
+
 
   --body-font-family:             'DM Sans', sans-serif;
 
@@ -721,7 +729,7 @@ strong {
 }
 
 .call-to-action .custom-btn {
-  background: var(--white-color);
+  background: var(--lightBlue-color);
   color: var(--dark-color);
 }
 
@@ -1070,9 +1078,49 @@ ALTERAÇÕES Iohan
 }
 
 .text-grey{
-  color: rgb(216, 216, 216)
+  color: rgb(216, 216, 216);
 }
 
 .text-lightGrey{
-  color: rgb(236, 236, 236)
+  color: rgb(236, 236, 236);
+}
+
+.text-navyBlue{
+  color: #1F577A !important;
+}
+
+.text-mustard{
+  color: #d9ba0a !important;
+}
+
+.text-primary{
+  color: var(--primary-color) !important;
+}
+
+.text-bg-1{
+  color: var(--main-bg-page-1) !important;
+}
+
+.img-round{
+  border-radius: 50%;
+}
+
+.bg-lightBlue{
+  background-color: #CBD4D7 !important;
+}
+
+.bg-color-primary{
+  background-color: var(--primary-color);
+}
+
+.bg-color-cl{
+  background-color: var(--complight-color);
+}
+
+.bg-color-md{
+  background-color: var(--compmed-color);
+}
+
+.bg-color-main-1{
+  background-color: var(--main-bg-page-1);
 }
