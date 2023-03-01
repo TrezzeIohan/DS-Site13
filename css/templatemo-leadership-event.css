@@ -12,7 +12,7 @@ https://templatemo.com/tm-575-leadership-event
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #0dcaf0;
+  --primary-color:                #102f42;
   --secondary-color:              #0d6efd;
   --section-bg-color:             #f0f8ff;
   --dark-color:                   #000000;
@@ -267,7 +267,7 @@ strong {
 .custom-btn:hover,
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .navbar-nav .nav-link.custom-btn:hover {
-  background: var(--primary-color);
+  background: var(--navbar-bg-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   color: var(--white-color);
 }
@@ -1057,13 +1057,22 @@ strong {
 
 
 /*---------------------------------------
-ALTERAÇÕES             
+ALTERAÇÕES Iohan      
 -----------------------------------------*/
 
-#arraste{
-  border: 1px solid var(--white-color);
-}
-
+/* ALteração necessária para a regra de 70vh do bootstrap funcionar*/
 #hero-panel{
   min-height: 0vh;
+}
+
+.text-justify{
+  text-align: justify;
+}
+
+.text-grey{
+  color: rgb(216, 216, 216)
+}
+
+.text-lightGrey{
+  color: rgb(236, 236, 236)
 }
