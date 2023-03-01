@@ -26,8 +26,6 @@ https://templatemo.com/tm-575-leadership-event
   --main-bg-page:                 #273053;
   --main-bg-page-1:               #303B66;
 
-
-
   --body-font-family:             'DM Sans', sans-serif;
 
   --h1-font-size:                 62px;
@@ -275,6 +273,7 @@ strong {
 .custom-btn:hover,
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .navbar-nav .nav-link.custom-btn:hover {
+
   background: var(--navbar-bg-color);
   box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
   color: var(--white-color);
@@ -729,6 +728,7 @@ strong {
 }
 
 .call-to-action .custom-btn {
+
   background: var(--lightBlue-color);
   color: var(--dark-color);
 }
@@ -1060,8 +1060,6 @@ strong {
     justify-content: center;
   }
 }
-
-
 
 
 /*---------------------------------------
