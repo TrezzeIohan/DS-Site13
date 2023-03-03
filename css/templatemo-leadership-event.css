@@ -13,6 +13,7 @@ https://templatemo.com/tm-575-leadership-event
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #102f42;
+  --primary-lighter-color:        #22638C;
   --secondary-color:              #0d6efd;
   --section-bg-color:             #f0f8ff;
   --dark-color:                   #000000;
@@ -1139,4 +1140,23 @@ html{
 }
 
 
+/*width*/
+::-webkit-scrollbar {
+  width: 11px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); 
+  border: 1px solid #ffff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--compmed-color); 
+}
