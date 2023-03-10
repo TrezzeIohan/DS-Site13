@@ -487,7 +487,9 @@ strong {
 -----------------------------------------*/
 .hero {
   position: relative;
+  /* Took out this rule to make the fisrt section responsive
   height: calc(90vh - 84px);
+  */
 }
 
 .hero::after {
@@ -811,7 +813,7 @@ strong {
 }
 
 .contact-form h2 {
-  background: var(--navbar-bg-color);
+  background: var(--primary-color);
   color: var(--white-color);
   padding: 30px 50px;
 }
@@ -993,10 +995,11 @@ strong {
     padding-bottom: 10px;
   }
 
+/* Took out the rule to make the first section the way they asked
   .hero {
     height: calc(75vh - 78.39px);
   }
-
+*/
   .nav-tabs .nav-link {
     width: 50%;
   }
@@ -1074,13 +1077,17 @@ html{
   overflow-x: hidden;
 }
 
-/* ALteração necessária para a regra de 70vh do bootstrap funcionar*/
+/* Alteração necessária para a regra de 70vh do bootstrap funcionar*/
 #hero-panel{
   min-height: 0vh;
 }
 
 .text-justify{
   text-align: justify;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-white{
@@ -1111,8 +1118,24 @@ html{
   color: var(--main-bg-page-1) !important;
 }
 
+.text-dark{
+  color: var(--dark-color);
+}
+
+.bigTxt{
+  font-size: 24px !important;
+}
+
 .img-round{
   border-radius: 50%;
+}
+
+.z-index-2{
+  z-index: 2;
+}
+
+.hero-h1{
+  font-size: 2.5rem;
 }
 
 .bg-lightBlue{
@@ -1135,28 +1158,87 @@ html{
   background-color: var(--main-bg-page-1);
 }
 
-#section_3, #section_5{
-  background-color: #ffff;
+#section_3{
+  background-color: #53A3D5;
 }
 
 
-/*width*/
-::-webkit-scrollbar {
-  width: 11px;
+#mercado-btn{
+  left: 90px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #ffff; 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--primary-color); 
-  border: 1px solid #ffff;
+.mrkt-btn{
+
+  background-color: greenyellow;
+  color: white;
+  text-shadow: 2px 4px 4px rgba(0,0,0, 0.6);
+
+  border: none;
+  
+  color: var(--white-color);
+  font-size: var(--copyright-text-font-size);
+  font-weight: var(--font-weight-bold);
+  padding: 10px 20px;
+
+  animation-duration: 1s;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--compmed-color); 
+.mrkt-btn:hover{
+  background-color: rgb(145, 216, 38);
 }
+
+.row{
+  margin:0;
+}
+
+
+@media screen and (min-width: 700px){
+
+    /*width*/
+  ::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffff; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+    border: 1px solid #ffff;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--compmed-color); 
+  }
+
+  #mercado-2p{
+    left: 30px;
+  }
+  
+  #mercado-3p{
+    left: 60px;
+  }
+  
+  mercado-btn{
+    left: 90px;
+  }
+  
+}
+
+@media screen and (max-width: 576px){
+
+  .hero-h1{
+    font-size: 1.25rem;
+  }
+
+  button{
+    min-width: 300px;
+  }
+}
+  
