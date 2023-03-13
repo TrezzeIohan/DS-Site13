@@ -1123,7 +1123,7 @@ html{
 }
 
 .bigTxt{
-  font-size: 24px !important;
+  font-size: 32px !important;
 }
 
 .img-round{
@@ -1167,6 +1167,23 @@ html{
   left: 90px;
   background-color: var(--primary-color);
   color: var(--white-color);
+  font-size: 1.50rem !important;
+}
+
+div#mercado-btn{
+  background-color: transparent !important;
+}
+
+#video-container{
+  height: 50vh;
+}
+
+#conheca-txt{
+  font-size: 1.25rem;
+}
+
+#section_4{
+  padding-bottom: 0;
 }
 
 .mrkt-btn{
@@ -1222,7 +1239,7 @@ html{
   }
   
   #mercado-3p{
-    left: 60px;
+    left: 90px;
   }
   
   mercado-btn{
@@ -1239,6 +1256,14 @@ html{
 
   button{
     min-width: 300px;
+  }
+
+  #video-container{
+    height: 30vh;
+  }
+
+  #conheca-txt{
+    font-size: 1rem;
   }
 }
   
