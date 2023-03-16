@@ -39,6 +39,7 @@ https://templatemo.com/tm-575-leadership-event
   --h5-font-size:                 24px;
   --h6-font-size:                 22px;
   --p-font-size:                  18px;
+  --p-mob-font-size:              1.2rem;
   --menu-font-size:               16px;
   --copyright-text-font-size:     16px;
 
@@ -1122,8 +1123,16 @@ html{
   color: var(--dark-color);
 }
 
+.text-color-cl{
+  color: var(--complight-color);
+}
+
+.text-color-md{
+  color: var(--compmed-color);
+}
+
 .bigTxt{
-  font-size: 32px !important;
+  font-size: 2.0rem !important;
 }
 
 .img-round{
@@ -1163,6 +1172,11 @@ html{
 }
 
 
+#qme{
+  background-color: #1F577A !important;
+}
+
+
 #mercado-btn{
   left: 90px;
   background-color: var(--primary-color);
@@ -1170,48 +1184,117 @@ html{
   font-size: 1.50rem !important;
 }
 
+#mercado-btn:hover{
+  background-color: #091720;
+}
+
 div#mercado-btn{
   background-color: transparent !important;
 }
 
 #video-container{
-  height: 50vh;
+  height: 400px;
+  width: 600px;
+
 }
 
 #conheca-txt{
-  font-size: 1.25rem;
+  font-size: 1.75rem;
 }
 
 #section_4{
   padding-bottom: 0;
+  padding-top: 50px;
 }
 
 .mrkt-btn{
 
-  background-color: greenyellow;
+  background-color: rgb(59, 255, 10);
   color: white;
   text-shadow: 2px 4px 4px rgba(0,0,0, 0.6);
 
   border: none;
+  border-radius: 6px;
   
   color: var(--white-color);
   font-size: var(--copyright-text-font-size);
   font-weight: var(--font-weight-bold);
   padding: 10px 20px;
 
-  animation-duration: 1s;
+  animation-duration: 0.1s;
 }
 
 .mrkt-btn:hover{
-  background-color: rgb(145, 216, 38);
+  background-color: rgb(32, 158, 1);
 }
 
 .row{
   margin:0;
 }
 
+#q-200mil{
+  font-weight: bold;
+  font-style: italic;
+}
 
-@media screen and (min-width: 700px){
+.qme-p{
+  font-size: 1.6rem;
+  color: var(--white-color);
+}
+
+
+#trj-btn{
+  background-color: var(--mustard-color);
+}
+
+#trj-btn:hover{
+  background-color: #9b8509;
+}
+
+/* Sessão de preços */
+#mot-p1{
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+#mot-p2{
+  font-size: 3.5rem;
+  font-weight: bolder;
+}
+
+#mot-p3{
+  font-size: 4.0rem;
+  font-weight: bolder;
+}
+
+/* Whatsapp Sticker */
+.wpp{
+  background-color: #25D366;
+  color: white;
+  border-radius: 20%;
+  width: 52px;
+  height: 52px;
+  right: 25px;
+  bottom: 25px;
+}
+
+#whatsapp-sticker{
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+#whatsapp-sticker:hover{
+  transform: scale(1.2);
+  color: white;
+  background-color: var(--primary-color);
+
+}
+
+.site-footer{
+  padding-top: 0;
+}
+
+@media screen and (min-width: 1000px) and (min-height: 800px){
 
     /*width*/
   ::-webkit-scrollbar {
@@ -1246,7 +1329,12 @@ div#mercado-btn{
     left: 90px;
   }
   
+  .qme-p{
+    font-size: 2.0rem;
+  }
+  
 }
+
 
 @media screen and (max-width: 576px){
 
@@ -1262,8 +1350,65 @@ div#mercado-btn{
     height: 30vh;
   }
 
-  #conheca-txt{
-    font-size: 1rem;
+  .bigTxt{
+    font-size: 1.50rem !important;
   }
+
+  #conheca-txt{
+    font-size: var(--p-mob-font-size);
+    text-align: center;
+  }
+
+
+  .qme-p{
+    font-size: var(--p-mob-font-size);
+    color: var(--white-color);
+  }
+
+
+
+  #mot-p1{
+    font-size: var(--p-mob-font-size);
+    font-weight: bolder;
+  }
+  
+  #mot-p2{
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  
+  #mot-p3{
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+  
+
+  #whatsapp-sticker{
+    right: 25px;
+    bottom: 25px;
+  }
+
+  p{
+    font-size: var(--p-mob-font-size);
+  }
+
 }
   
+@media screen and (min-width: 600px) and (max-width: 900px){
+
+  #whatsapp-sticker{
+    right: 25px;
+    bottom: 25px;
+  }
+  
+  
+  
+}
+
+@media screen and (max-height: 500px){
+
+  #video-container{
+    height: 60vh;
+    width: 55vw;
+  }
+}
