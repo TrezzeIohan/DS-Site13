@@ -412,6 +412,7 @@ strong {
 }
 
 .highlight-thumb {
+  height:100%;
   position: relative;
   overflow: hidden;
   margin-top: 24px;
@@ -420,7 +421,7 @@ strong {
 
 .highlight-thumb::after {
   content: "";
-  background: rgba(0, 0, 0, 0.45);
+  /*background: rgba(0, 0, 0, 0.45);*/
   position: absolute;
   top: 0;
   left: 0;
@@ -937,8 +938,7 @@ strong {
 }
 
 .social-icon-link:hover {
-  background: var(--primary-color);
-  color: var(--white-color);
+  transform: scale(1.25);
 }
 
 
@@ -1209,7 +1209,7 @@ div#mercado-btn{
 
 .mrkt-btn{
 
-  background-color: rgb(59, 255, 10);
+  background-color: #4F9D07;
   color: white;
   text-shadow: 2px 4px 4px rgba(0,0,0, 0.6);
 
@@ -1225,7 +1225,7 @@ div#mercado-btn{
 }
 
 .mrkt-btn:hover{
-  background-color: rgb(32, 158, 1);
+  background-color: #407D06;
 }
 
 .row{
@@ -1294,7 +1294,7 @@ div#mercado-btn{
   padding-top: 0;
 }
 
-@media screen and (min-width: 1000px) and (min-height: 800px){
+@media screen and (min-width: 900px) and (min-height: 600px){
 
     /*width*/
   ::-webkit-scrollbar {
@@ -1335,6 +1335,22 @@ div#mercado-btn{
   
 }
 
+@media screen and (min-width: 800px) and (min-height: 600px){
+
+  #mercado-2p{
+    left: 2vw;
+  }
+  
+  #mercado-3p{
+    left: 4vw;
+  }
+  
+  mercado-btn{
+    left: 6vw;
+  }
+  
+
+}
 
 @media screen and (max-width: 576px){
 
